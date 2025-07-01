@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #34495e;
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 800
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.my-auto {
+    width: 100%;
+}
+
+.header-nav {
+    position: fixed;
+    height: 100vh;
+    width: 13rem;
+    background-color: #38ada9 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.phone-devide {
+    display: none;
+}
+
+.phone-devide i {
+    padding: 5px;
+    border: solid 1px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.header-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.header-nav li a {
+    font-weight: 700;
+    color: #5dd2ce;
+    font-size: large;
+    font-family: "Mulish", sans-serif;
+}
+
+.header-nav li a:hover {
+    color: rgba(240, 255, 255, 0.849);
+}
+
+.header-nav li a:active {
+    color: white;
+}
+
+.header-nav li a.active {
+    color: white;
+  }
+  
+
+.avatar img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 9rem;
+    border: solid 0.45rem #5dd2ce;
+}
+
+.container {
+    margin-left: 16rem;
+}
+
+.resume-section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    max-width: 49rem;
+}
+
+.my-auto h1 {
+    font-size: 4rem ;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.infor-basic {
+    font-size: 1.2rem;
+}
+
+.info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.infor-id a{
+    color: #5dd2ce;
+}
+
+.project-content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.project-content-id {
+    height: 15em;
+    width:24rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    background: url('https://www.bluecatreports.com/blog/best-trello-board-examples/kanban_template.avif') center center / cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-content-id::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40, 208, 224, 0.1); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+  }
+
+
+.project-content-id:hover {
+transform: scale(0.98); 
+opacity: 0.95;
+}
+
+.project-content-id:hover::before {
+opacity: 1;
+}
+
+.project-content-id * {
+position: relative;
+z-index: 999;
+}
+
+.project-content-id p {
+    color: rgba(255, 255, 255, 0.814);
+    font-weight: 500;
+}
+
+.phone-devide ul {
+    display: none;
+    flex-direction: column;
+    background-color: #5dd2ce;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    animation: slideDown 0.3s ease forwards;
+}
+
+.phone-devide ul li {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.phone-devide ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+.phone-devide ul.show {
+    display: flex;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+  
+  .skills-icons li {
+    list-style: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .skills-icons li:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+  
+  .fa-js { color: #f7df1e; }        
+  .fa-react { color: #61dafb; }     
+  .fa-java { color: #007396; }      
+  .fa-bootstrap { color: #7952b3; }
+  .fa-html5 { color: #e44d26; }     
+  .fa-css3-alt { color: #264de4; } 
+  .fa-github { color: #333; }   
+  .fa-trello { color: #0079bf; } 
+  .fa-check { color: chartreuse;}
+  .fa-bookmark { color: yellow;}
+
+  #education a{
+    font-size: x-large;
+    font-weight: 700;
+    color: #007396;
+  }
+
+  .interests-pictures img {
+    width: 13rem;
+    
+  }
+
+
+  @media (max-width: 992px) {
+    body {
+        flex-direction: column;
+    }
+
+    .phone-devide {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-nav {
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .header-nav ul {
+        display: none;
+    }
+
+    .header-nav li {
+        margin: 0.5rem;
+    }
+
+    .avatar img {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        border: solid 0.25rem #5dd2ce;
+    }
+
+    .container {
+        margin-top: 4rem;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .resume-section {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .project-content-id {
+        width: 100%;
+        margin: auto;
+    }
+
+    .skills-icons {
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+
+    .interests-pictures img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-auto h1 {
+        font-size: 2.5rem;
+    }
+
+    .infor-basic {
+        font-size: 1rem;
+    }
+
+    #education a {
+        font-size: large;
+    }
+
+    .skills-icons {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        position: fixed;
+        z-index: 1000; 
+      }
+    .phone-devide {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #38ada9;
+      z-index: 1000;
+    }
+  
+    .phone-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .phone-header h1 {
+      color: white;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  
+    #menu-icon {
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border: 1px solid white;
+      padding: 5px 8px;
+      border-radius: 4px;
+    }
+  
+    #mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #38ada9;
+      padding: 1rem;
+      animation: slideDown 0.3s ease-in-out;
+    }
+  
+    #mobile-menu.show {
+      display: flex;
+    }
+  
+    #mobile-menu li {
+      margin: 0.8rem 0;
+    }
+  
+    #mobile-menu li a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+  
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .container {
+      margin-top: 5rem;
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
+  
