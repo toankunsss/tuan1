@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang giới thiệu cá nhân của Nguyễn Văn Toàn - Front-end Developer sử dụng React, JavaScript, cùng các dự án nổi bật và kỹ năng phát triển phần mềm.">
     <title>Profile Van Toan</title>
     <link rel="stylesheet" href="assets/style.css">
     <link
@@ -13,39 +14,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
 </head>
 <body>
-    <nav class="header-nav">
-        <ul>
-            <li>
-                <div class="avatar">
-                    <img src="https://a0.anyrgb.com/pngimg/772/1388/nom-nom-pandas-date-part-1-bare-bears-daniel-chong-part-1-we-bare-bears-mannequin-bare-grizzly-bear-polar-bear-roar.png" alt="avatar">
-                </div>
-            </li>
-            <li> <a class="active" href="#about-me" title="about me">about me</a> </li>
-            <li> <a class="active " href="#project" title="project">project</a> </li>
-            <li> <a class="active " href="#education" title="education">education</a></li>
-            <li> <a class="active " href="#interests" title="education">interests</a></li>
-        </ul>
-        <div class="phone-devide">
-            <div class="phone-header">
-              <h1>NGUYEN VAN TOAN</h1>
-              <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <header class="header">
+        <a class="header__logo" href="#" title="logo">ToanFE</a>
+        <nav>
+            <div class="header--horizal">
+                <a class="active" href="#about-me" title="about me">About me</a> 
+                <a class="active " href="#project" title="project">Project</a> 
+                <a href="#skills">skills</a>
+                <a class="active " href="#education" title="education">Education</a>
+                <a class="active " href="#interests" title="interests">Interests</a>
+                <a href="#contact" title="contact">Contact</a></li>
             </div>
-            <ul id="mobile-menu">
-              <li><a href="#about-me">ABOUT ME</a></li>
-              <li><a href="#project">PROJECTS</a></li>
-              <li><a href="#skills">SKILLS</a></li>
-              <li><a href="#education">EDUCATION</a></li>
-              <li><a href="#interests">INTERESTS</a></li>
-            </ul>
-          </div>
-    </nav>
-    <div class="container">
-        <section class="resume-section " id="about-me">
+            <div class="phone-devide">
+                <div class="phone-header">
+                  <h1>NGUYEN VAN TOAN</h1>
+                  <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </div>
+                <ul id="mobile-menu">
+                    <li> <a class="active" href="#about-me" title="about me">about me</a> </li>
+                    <li> <a class="active " href="#project" title="project">project</a> </li>
+                    <li><a href="#skills">skills</a></li>
+                    <li> <a class="active " href="#education" title="education">education</a></li>
+                    <li> <a class="active " href="#interests" title="interests">interests</a></li>
+                    <li><a href="#contact" title="contact">CONTACT</a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <section class="resume-section section__profile" id="about-me">
             <div class="my-auto">
                 <h1>NGUYEN VAN TOAN</h1>
                 <div class="infor-basic">
-                    <i class="fa-solid fa-id-card" ></i>
-                    FE Developer
+                    <h2> I'm a 
+                        <span style="--i:4;" data-text="Coder1" >Coder</span>
+                        <span style="--i:3;" data-text="Coder" >Coder</span>
+                        <span style="--i:2;" data-text="Designer" >Designer</span>
+                        <span style="--i:1;" data-text="Ironmen" >Ironmen</span>
+                    </h2>
                 </div>
                 <div class="infor-basic">
                     <i class="fa-solid fa-map"></i>
@@ -68,11 +74,11 @@
                 </div>
                 <div class="infor-id">
                     <i class="fa-solid fa-envelope" ></i>
-                    <a href="" title="email">nguyenvantoanmnsh@gmail.com</a>
+                    <a href="mailto:nguyenvantoanmnsh@gmail.com" title="email">nguyenvantoanmnsh@gmail.com</a>
                 </div>
                 <div class="infor-id">
                     <i class="fa-solid fa-phone"></i>
-                    <a href="" title="phonenumber">0328869398</a>
+                    <a href="tel:0328869398" title="phonenumber">0328869398</a>
                 </div>
                 <div class="infor-id">
                     <i class="fa-brands fa-github"></i>
@@ -80,15 +86,22 @@
                 </div>
 
             </div>
+            <div class="home-img">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="./assets/img/pngegg.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="resume-section " id="project" >
             <div class="my-auto">
                 <h2>Projects</h2>
                 <div>Here are a few of my standout projects:</div>
                 <div class="project-content">
-                    <div class="project-content-id">
+                    <div class="project-content-id trello">
                       <div class="project-title">
-                        <a href="">
+                        <a href="https://trello-five-sigma.vercel.app/" target="_blank">
                             Trello
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
@@ -98,9 +111,9 @@
                       </p>
                     </div>
                   
-                    <div class="project-content-id">
+                    <div class="project-content-id magement">
                       <div class="project-title">
-                        <a href="">
+                        <a href="https://uat.midtob.com"  target="_blank">
                             Enterprise Internal Management
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
@@ -110,7 +123,7 @@
                       </p>
                     </div>
                   
-                    <div class="project-content-id">
+                    <div class="project-content-id weather">
                       <div class="project-title">
                         <a href="">
                             Weather App
@@ -129,14 +142,14 @@
                 <h2>Skills</h2>
                 <div>Programming Languages & Tools:</div>
                 <ul class="skills-icons">
-                    <li><i class="fa-brands fa-js"></i></li>
-                    <li><i class="fa-brands fa-react"></i></li>
-                    <li><i class="fa-brands fa-java"></i></li>
-                    <li><i class="fa-brands fa-bootstrap"></i></li>
-                    <li><i class="fa-brands fa-html5"></i></li>
-                    <li><i class="fa-brands fa-css3-alt"></i></li>
-                    <li><i class="fa-brands fa-github"></i></li>
-                    <li><i class="fa-brands fa-trello"></i></li>
+                    <li><i class="fa-brands fa-js"></i><span class="tooltip-text">JavaScript</span></li>
+                    <li><i class="fa-brands fa-react"></i><span class="tooltip-text">React</span></li>
+                    <li><i class="fa-brands fa-java"></i><span class="tooltip-text">Java</span></li>
+                    <li><i class="fa-brands fa-bootstrap"></i><span class="tooltip-text">Bootstrap</span></li>
+                    <li><i class="fa-brands fa-html5"></i><span class="tooltip-text">HTML5</span></li>
+                    <li><i class="fa-brands fa-css3-alt"></i><span class="tooltip-text">CSS3</span></li>
+                    <li><i class="fa-brands fa-github"></i><span class="tooltip-text">GitHub</span></li>
+                    <li><i class="fa-brands fa-trello"></i><span class="tooltip-text">Trello</span></li>
                 </ul>
                 <div>
                     Workflows:
@@ -218,7 +231,51 @@
                 </div>
             </div>
         </section>
-    </div>
+
+        <section class="resume-section" id="contact">
+            <div class="my-auto">
+                <h2>Contact</h2>
+                <div class="section__div">
+                    <section class="section__div--content">
+                        <h2>LET GET TOGETHER</h2>
+                        <p>       
+                            Aside from being a developer,
+                             I spend much of my free time listening to music,
+                              reading books, rewriting my experiences on the blog,
+                               and creating videos on YouTube.</p>
+                        <div class="infor-id">
+                            <i class="fa-solid fa-envelope" ></i>
+                            <a href="mailto:nguyenvantoanmnsh@gmail.com" title="email">nguyenvantoanmnsh@gmail.com</a>
+                        </div>
+                        <div class="infor-id">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:0328869398" title="phonenumber">0328869398</a>
+                        </div>
+                        <div class="infor-id">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="" title="github">toankunss@........</a>
+                        </div>
+                    </section>
+
+                    <form class="contact-form" autocomplete="off">
+                        <div>
+                            <label for="name">Full Name</label><br>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" required placeholder="Your email">
+                        </div>
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
         const sections = document.querySelectorAll(".resume-section");
@@ -253,6 +310,23 @@
             menuIcon.classList.toggle("fa-bars");
             menuIcon.classList.toggle("fa-xmark"); 
         });
+
+        //contact submit
+        document.querySelector(".contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            alert(
+                `Cảm ơn bạn đã liên hệ!\n\nHọ tên: ${name}\nEmail: ${email}\nNội dung: ${message}`
+            );
+
+            this.reset();
+        });
+
+
 
       </script>
 </body>
